@@ -27,7 +27,7 @@ video {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 200px;
-  font-size: 80px;
+  font-size: 50px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -40,7 +40,7 @@ video {
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;

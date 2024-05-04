@@ -7,7 +7,7 @@ const Landingpage = () => {
       <Navbar></Navbar>
       <video src={videobg} autoPlay loop muted></video>
       <div className="content">
-        <h1 className="bg-text">Welcome To Nutrifit</h1>
+        <h1 className="bg-text mt-4 ">Welcome To Nutrifit</h1>
         <p className="bg-para">`Your Fitness Starts Here`</p>
       </div>
     </div>
