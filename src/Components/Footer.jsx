@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
             </form>
           </div>
-          <div className="col-md-4 mb-md-5 d-flex justify-content-center align-items-center flex-column ">
+          <div className="col-md-4 mb-5 d-flex justify-content-center align-items-center flex-column ">
             <div className="d-flex justify-content-center align-items-center flex-column mt-md-5">
               <img
                 className="mt-5 mb-3"
