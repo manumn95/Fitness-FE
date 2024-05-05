@@ -61,17 +61,17 @@ const Footer = () => {
               </div>
             </form>
           </div>
-          <div className="col-md-4 mb-5 d-flex justify-content-center align-items-center flex-column ">
-            <div className="d-flex justify-content-center align-items-center mt-5">
+          <div className="col-md-4 mb-md-5 d-flex justify-content-center align-items-center flex-column ">
+            <div className="d-flex justify-content-center align-items-center flex-column mt-md-5">
               <img
                 className="mt-5"
                 src={appstore}
-                style={{ width: "100%" }}
+                style={{ width: "50%" }}
               ></img>
               <img
-                className="mt-5"
+                className="mt-2"
                 src={playstore}
-                style={{ width: "100%" }}
+                style={{ width: "50%" }}
               ></img>
             </div>
 
