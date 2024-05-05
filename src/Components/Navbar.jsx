@@ -1,5 +1,9 @@
+import { Link } from "react-router-dom";
 import "../Components/style.css";
 import logo from "../assets/images/logo.png";
+
+import Footer from "./Footer";
+
 const Navbar = () => {
   return (
     <>
@@ -8,6 +12,11 @@ const Navbar = () => {
         <div className="container">
           <a className="navbar-brand" href="#!">
             <img src={logo} className="nav-logo"></img>
+            <span>
+              <a className="text-decoration-none text-white fs-5" href="">
+                Nutrifit
+              </a>
+            </span>
           </a>
           <button
             className="navbar-toggler  nav-bg"
@@ -23,26 +32,16 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto ">
               <li className="nav-item">
-                <a
-                  className="nav-link active text-white fs-5"
+                <button
+                  className="nav-link active text-white fs-5 hover"
                   aria-current="page"
-                  href="/"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active text-white fs-5"
-                  aria-current="page"
-                  href="/"
                 >
                   About
-                </a>
+                </button>
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-link active text-white fs-5"
+                  className="nav-link active text-white fs-5 hover"
                   aria-current="page"
                   href="/"
                 >
@@ -52,12 +51,18 @@ const Navbar = () => {
             </ul>
 
             <div className="d-flex gap-5 ">
-              <a className="nav-link active text-white fs-5" href="">
+              <Link
+                className="nav-link active text-white fs-5 hover"
+                to="/Signup"
+              >
                 Sign Up
-              </a>
-              <a className="nav-link active text-white fs-5" href="">
+              </Link>
+              <button
+                className="nav-link active text-white fs-5 hover"
+                href="#"
+              >
                 Login
-              </a>
+              </button>
             </div>
           </div>
         </div>

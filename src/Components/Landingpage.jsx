@@ -1,5 +1,6 @@
 import videobg from "../assets/videos/bg.mp4";
 import "../Components/landing.css";
+import Footer from "./Footer";
 import Navbar from "./Navbar";
 const Landingpage = () => {
   return (
@@ -8,8 +9,9 @@ const Landingpage = () => {
       <video src={videobg} autoPlay loop muted></video>
       <div className="content">
         <h1 className="bg-text mt-4 ">Welcome To Nutrifit</h1>
-        <p className="bg-para">`Your Fitness Starts Here`</p>
+        <p className="bg-para ">`Your Fitness Starts Here`</p>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

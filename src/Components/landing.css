@@ -11,6 +11,9 @@ video {
   height: 100%;
   object-fit: cover;
 }
+body {
+  background-color: black;
+}
 .content {
   position: absolute;
   width: 100%;
@@ -47,4 +50,7 @@ video {
   font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
   font-weight: 800;
   -webkit-font-smoothing: antialiased;
+}
+.footer-div {
+  background-color: black;
 }
