@@ -1,7 +1,8 @@
 import "../Components/landing.css";
 import logo from "../assets/images/logo-white.png";
-
-import store from "../assets/images/store.png";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import appstore from "../assets/images/appstore.png";
+import playstore from "../assets/images/playstore.png";
 import "../Components/style.css";
 const Footer = () => {
   return (
@@ -60,12 +61,27 @@ const Footer = () => {
               </div>
             </form>
           </div>
-          <div className="col-md-4 mb-5 d-flex justify-content-center align-items-center">
-            <img
-              className="mt-5"
-              src={store}
-              style={{ width: "80%", height: "150px" }}
-            ></img>
+          <div className="col-md-4 mb-5 d-flex justify-content-center align-items-center flex-column ">
+            <div className="d-flex justify-content-center align-items-center mt-5">
+              <img
+                className="mt-5"
+                src={appstore}
+                style={{ width: "100%" }}
+              ></img>
+              <img
+                className="mt-5"
+                src={playstore}
+                style={{ width: "100%" }}
+              ></img>
+            </div>
+
+            <div className="d-flex justify-content-center align-items-center gap-3 text-secondary fs-3">
+              <i className="bi bi-facebook  "></i>
+              <i className="bi bi-twitter "></i>
+              <i className="bi bi-instagram "></i>
+              <i className="bi bi-youtube "></i>
+              <i className="bi bi-linkedin f"></i>
+            </div>
           </div>
         </div>
       </div>
