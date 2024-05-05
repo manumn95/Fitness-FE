@@ -24,7 +24,7 @@ const Footer = () => {
               <div className="pt-0 mb-3 rounded">
                 <input
                   style={{ width: "100%" }}
-                  className=""
+                  className="rounded p-2"
                   type="email"
                   placeholder="Email"
                   name="email"
@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div className="pt-0 mb-3 rounded">
                 <input
-                  className=""
+                  className="rounded p-2"
                   type="Number"
                   placeholder="Phone"
                   name="email"
@@ -41,7 +41,7 @@ const Footer = () => {
               </div>
               <div className="pt-0 mb-3 rounded">
                 <textarea
-                  className=""
+                  className="rounded p-2"
                   type="Number"
                   placeholder="Message"
                   name="email"
@@ -50,7 +50,7 @@ const Footer = () => {
               </div>
               <div className="pt-0 mb-3 rounded">
                 <button
-                  className=" btn  text-white border btn-hover"
+                  className=" btn  text-white border btn-hover rounded"
                   type="Number"
                   placeholder="Phone"
                   name="email"
