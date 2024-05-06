@@ -8,7 +8,7 @@ import quotes4 from "../assets/images/quotes4.jpg";
 const Home = () => {
   return (
     <>
-      <div className="container">
+      <div className="container mt-3">
         <h1 className="text-center text-info">welcome back @manumn</h1>
       </div>
       <div className="mt-4">
