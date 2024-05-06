@@ -58,7 +58,7 @@ const Users = () => {
         </div>
       </nav>
 
-      <div className="container d-flex gap-5">
+      <div className="container d-flex gap-3">
         <Link className="text-white mt-5 " to="home">
           Fitness Goals
         </Link>
