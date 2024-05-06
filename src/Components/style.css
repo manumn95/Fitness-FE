@@ -57,4 +57,17 @@
 .btn-hover {
   cursor: pointer;
 }
-
+.user-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/bg.jpg");
+  background-size: cover;
+}
+@media (max-width: 550px) {
+  .user-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/images/bg-media.jpg");
+    background-size: cover;
+  }
+}

@@ -7,18 +7,26 @@ import "../Components/style.css";
 const Footer = () => {
   return (
     <div>
-      <div className="conatiner " id="myid">
+      <div
+        className="conatiner "
+        id="myid"
+        style={{ backgroundColor: "black " }}
+      >
         <div className="row">
           <div className="col-md-4 p-4">
-            <img src={logo} style={{ width: "100px" }}></img>
-            <span className="text-white fs-3">Nutrifit</span>
+            <img
+              className="nav-logo"
+              src={logo}
+              style={{ width: "100px" }}
+            ></img>
+            <span className="text-white fs-3 ms-2">Nutrifit</span>
             <p className="ms-5" style={{ color: "lightgrey" }}>
               At Nutrifit, we make group workouts fun, daily food healthy &
               tasty, mental fitness easy with yoga & meditation, Medical &
               lifestyle care hassle-free.#BeBetterEveryDay
             </p>
           </div>
-          <div className="col-md-4 p-3 " style={{ color: "lightgrey" }}>
+          <div className="col-md-4 " style={{ color: "lightgrey" }}>
             <form className="p-5 ms-auto">
               <h4 className="text-center mb-4">Contact Us</h4>
               <div className="pt-0 mb-3 rounded">

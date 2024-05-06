@@ -10,7 +10,11 @@ const Navbar = (Props) => {
   const [type, setType] = useState("");
   return (
     <>
-      <div className="collapse" id="navbarToggleExternalContent"></div>
+      <div
+        className="collapse"
+        
+        id="navbarToggleExternalContent"
+      ></div>
       <nav className="navbar navbar-expand-lg navbar fixed-top">
         <div className="container">
           <a className="navbar-brand" href="#!">
@@ -69,7 +73,7 @@ const Navbar = (Props) => {
                 className="nav-link active text-white fs-5 hover"
                 onClick={() => {
                   setOpenType(true);
-                  setType('')
+                  setType("");
                   Props.styles("z-index");
                 }}
               >
