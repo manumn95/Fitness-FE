@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Landingpage from "./Components/Landingpage";
 import Signup from "./Components/Signup";
-import Footer from "./Components/Footer";
+import Login from "./Components/Login";
 function App() {
   const router = createBrowserRouter([
     {
@@ -13,9 +13,9 @@ function App() {
       element: <Signup></Signup>,
     },
     {
-      path:'/footer',
-      element:<Footer></Footer>
-    }
+      path: "/login",
+      element: <Login></Login>,
+    },
   ]);
   return (
     <RouterProvider router={router}>

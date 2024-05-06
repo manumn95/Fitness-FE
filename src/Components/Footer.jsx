@@ -7,7 +7,7 @@ import "../Components/style.css";
 const Footer = () => {
   return (
     <div>
-      <div className="conatiner ">
+      <div className="conatiner " id="myid">
         <div className="row">
           <div className="col-md-4 p-4">
             <img src={logo} style={{ width: "100px" }}></img>

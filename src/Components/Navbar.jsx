@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import "../Components/style.css";
 import logo from "../assets/images/logo.png";
+import { useState } from "react";
+import Login from "./Login";
 
-import Footer from "./Footer";
-
-const Navbar = () => {
+const Navbar = (Props) => {
+  const [openType, setOpenType] = useState(false);
   return (
     <>
       <div className="collapse" id="navbarToggleExternalContent"></div>
@@ -32,12 +33,13 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto ">
               <li className="nav-item">
-                <button
+                <Link
                   className="nav-link active text-white fs-5 hover"
                   aria-current="page"
+                  to="#myid"
                 >
                   About
-                </button>
+                </Link>
               </li>
               <li className="nav-item">
                 <a
@@ -59,7 +61,10 @@ const Navbar = () => {
               </Link>
               <button
                 className="nav-link active text-white fs-5 hover"
-                href="#"
+                onClick={() => {
+                  setOpenType(true);
+                  Props.styles("z-index");
+                }}
               >
                 Login
               </button>
@@ -67,6 +72,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <Login open={openType} setType={setOpenType}></Login>
     </>
   );
 };
