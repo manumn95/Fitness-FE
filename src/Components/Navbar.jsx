@@ -3,9 +3,11 @@ import "../Components/style.css";
 import logo from "../assets/images/logo.png";
 import { useState } from "react";
 import Login from "./Login";
+import Signup from "./Signup";
 
 const Navbar = (Props) => {
   const [openType, setOpenType] = useState(false);
+  const [type, setType] = useState("");
   return (
     <>
       <div className="collapse" id="navbarToggleExternalContent"></div>
@@ -53,16 +55,21 @@ const Navbar = (Props) => {
             </ul>
 
             <div className="d-flex gap-5 ">
-              <Link
-                className="nav-link active text-white fs-5 hover"
-                to="/Signup"
-              >
-                Sign Up
-              </Link>
               <button
                 className="nav-link active text-white fs-5 hover"
                 onClick={() => {
                   setOpenType(true);
+                  setType("signup");
+                  Props.styles("z-index");
+                }}
+              >
+                Sign Up
+              </button>
+              <button
+                className="nav-link active text-white fs-5 hover"
+                onClick={() => {
+                  setOpenType(true);
+                  setType('')
                   Props.styles("z-index");
                 }}
               >
@@ -72,7 +79,8 @@ const Navbar = (Props) => {
           </div>
         </div>
       </nav>
-      <Login open={openType} setType={setOpenType}></Login>
+      <Signup open={openType} setType={setOpenType} type={type}></Signup>
+      <Login open={openType} setType={setOpenType} type={type}></Login>
     </>
   );
 };

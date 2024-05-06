@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { IconButton, InputAdornment } from "@mui/material";
+import Signup from "./Signup";
 
 const style = {
   position: "absolute",
@@ -27,7 +27,7 @@ const Login = (Props) => {
   if (!Props.open) return null;
   return (
     <>
-      <div>
+    {Props.type === 'signup'?(<Signup></Signup>):( <div>
         <Modal
           open={Props.open}
           aria-labelledby="modal-modal-title"
@@ -88,7 +88,8 @@ const Login = (Props) => {
             </div>
           </Box>
         </Modal>
-      </div>
+      </div>)}
+     
     </>
   );
 };
