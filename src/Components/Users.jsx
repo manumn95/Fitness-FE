@@ -16,9 +16,12 @@ const Users = () => {
               style={{ width: "70px" }}
             ></img>
             <span>
-              <a className="text-decoration-none text-white fs-5 ms-2" href="/">
+              <Link
+                className="text-decoration-none text-white fs-5 ms-2"
+                to="home"
+              >
                 Nutrifit
-              </a>
+              </Link>
             </span>
           </a>
           <button
@@ -59,16 +62,14 @@ const Users = () => {
       </nav>
 
       <div className="container d-flex gap-3">
-        <Link className="text-white mt-5 " to="home">
+        <Link className="text-white mt-5 " to="goal">
           Fitness Goals
         </Link>
-        <Link className="text-white mt-5 " to="">
+        <Link className="text-white mt-5 " to="diet">
           Diet Plans
         </Link>
-        <Link className="text-white mt-5 " to="">
-          History
-        </Link>
-        <Link className="text-white mt-5 " to="">
+
+        <Link className="text-white mt-5 " to="activities">
           Activities
         </Link>
         <div className="mt-5"></div>
