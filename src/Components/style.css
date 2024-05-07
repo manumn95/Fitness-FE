@@ -71,3 +71,8 @@
     background-size: cover;
   }
 }
+
+.link-hover:active {
+  text-decoration: underline;
+  color: blue;
+}

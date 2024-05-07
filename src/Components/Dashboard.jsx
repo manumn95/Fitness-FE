@@ -1,9 +1,12 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Components/style.css";
 import logo from "../assets/images/logo-white.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import { counts } from "./Utils/data";
 import Footer from "./Footer";
-const Users = () => {
+import CountsCard from "./Cards/CountsCard";
+
+const Dashboard = () => {
   return (
     <div className="user-bg">
       <div className="collapse" id="navbarToggleExternalContent"></div>
@@ -61,26 +64,35 @@ const Users = () => {
         </div>
       </nav>
 
-      <div className="container d-flex gap-3">
-        <Link className="text-white mt-5 " to="goal">
-          Fitness Goals
-        </Link>
-        <Link className="text-white mt-5 " to="diet">
-          Diet Plans
-        </Link>
+      <navitem className=" container d-flex gap-5  ">
+        <NavLink className="nav-link link-hover " to="/">
+          Dashboard
+        </NavLink>
+        <NavLink className="nav-link link-hover " to="/workouts">
+          Workouts
+        </NavLink>
+      </navitem>
+      <div></div>
 
-        <Link className="text-white mt-5 " to="activities">
-          Activities
-        </Link>
-        <div className="mt-5"></div>
+      <div>
+        <h1 className="text-center text-white mt-5">Dashboard</h1>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
+          {counts.map((item, index) => {
+            return (
+              <div key={index} className="col-md-4">
+                <CountsCard key={index} item={item}></CountsCard>
+              </div>
+            );
+          })}
+        </div>
       </div>
       <div>
-        <Outlet></Outlet>
+        <Footer></Footer>
       </div>
-
-      <Footer></Footer>
     </div>
   );
 };
 
-export default Users;
+export default Dashboard;
