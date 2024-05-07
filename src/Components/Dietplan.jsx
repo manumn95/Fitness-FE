@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../Components/style.css";
 import { useNavigate } from "react-router-dom";
 
@@ -123,13 +122,13 @@ const Dietplan = () => {
                 Result: <span className={styles}>{bmiMessage}</span>
               </p>
 
-              <Link
-                className="ms-2 p-4 fs-2"
-                style={{ width: "100%", color: "tomato" }}
+              <button
+                className=" mb-2 btn btn-success"
+                style={{ width: "100%", color: "white" }}
                 onClick={handleClick}
               >
                 Add Your Diet Plans
-              </Link>
+              </button>
             </div>
           )}
         </div>
